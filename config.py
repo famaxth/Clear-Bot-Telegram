@@ -4,7 +4,7 @@ import json
 import logging
 import re
 
-admin_user = ["por0vos1k"]
+admin_user = ["text"]
 
 def get_bad_words():
     with open('bad_words.json', 'r', encoding='utf-8') as f:
@@ -12,7 +12,7 @@ def get_bad_words():
     return r
 
 
-token = '1426362013:AAEHULtj5Spt4CzJA3XTmh_J2NzrkbyyQ4o'
+token = 'text'
 
 texts = {
     'start': 'Здравствуйте, я - бот, убирающий нежелательный контент в чате. Могу удалять запрещенные слова, фото, геолокацию, контакты, документы и прочий мусор. Также имеется возможность поставить защиту от спама. \n\n',
