@@ -1,0 +1,3 @@
+2021-01-05 12:24:19,574 - [INFO] - __main__ - (app.py).(17) - [Bot] Бот начал работу!
+2021-01-05 12:24:44,313 - [ERROR] - __main__ - (app.py).(179) - [ERROR] 'int' object has no attribute 'chat'
+2021-01-05 12:24:44,314 - [INFO] - __main__ - (app.py).(182) - [Bot] Бот закончил работу!
