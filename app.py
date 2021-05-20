@@ -1,7 +1,8 @@
+# -*- coding: utf-8 -*-
+
 #Production by Berlin
 #Telegram - @por0vos1k
 
-# -*- coding: utf-8 -*-
 
 import telebot
 import config
@@ -15,6 +16,7 @@ bot_info = bot.get_me()
 logger = app_logger.get_logger(__name__)
 
 logger.info('Бот начал работу!', name='Bot')
+
 
 
 def scan_message(text):
@@ -31,6 +33,7 @@ def def_keyboard():
     keyboard.add(config.texts['add_antispam'])
     return keyboard
 
+
 @bot.message_handler(commands=['start'])
 def bot_command_start(message):
     keyboard = None
@@ -38,10 +41,12 @@ def bot_command_start(message):
         keyboard = def_keyboard()
     bot.send_message(message.chat.id, config.texts['start'] + config.texts["help_text"], reply_markup=keyboard)
 
+
 @bot.message_handler(commands=['help'])
 def bot_command_help(message):
     if message.chat.type == 'private':
         bot.send_message(message.chat.id, config.texts['help_text'])
+
 
 @bot.message_handler(commands=['antispam'])
 def bot_command_antispam(message):
@@ -54,40 +59,48 @@ def delete_links_document(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
 
+
 @bot.message_handler(content_types=['photo'])
 def delete_links_photo(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
+
 
 @bot.message_handler(content_types=['audio'])
 def delete_links_audio(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
 
+
 @bot.message_handler(content_types=['video'])
 def delete_links_video(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
+
 
 @bot.message_handler(content_types=['sticker'])
 def delete_links_sticker(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
 
+
 @bot.message_handler(content_types=['location'])
 def delete_links_location(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
+
 
 @bot.message_handler(content_types=['contact'])
 def delete_links_contact(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
 
+
 @bot.message_handler(content_types=['caption'])
 def delete_links_caption(message):
 	if (str(message.from_user.id) not in user0):
 		bot.delete_message(message.chat.id, message.message_id)
+
 
 @bot.message_handler(content_types=['venue'])
 def delete_links_venue(message):
