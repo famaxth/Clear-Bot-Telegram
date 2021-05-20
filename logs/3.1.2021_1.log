@@ -1,3 +1,0 @@
-2021-01-03 10:05:31,188 - [INFO] - __main__ - (app.py).(16) - [Bot] Бот начал работу!
-2021-01-03 10:05:31,472 - [ERROR] - __main__ - (app.py).(118) - [ERROR] module 'config' has no attribute 'texts'
-2021-01-03 10:05:31,472 - [INFO] - __main__ - (app.py).(121) - [Bot] Бот закончил работу!

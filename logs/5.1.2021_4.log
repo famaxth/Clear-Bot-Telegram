@@ -1,3 +1,0 @@
-2021-01-05 11:17:21,958 - [INFO] - __main__ - (app.py).(17) - [Bot] Бот начал работу!
-2021-01-05 11:17:41,352 - [ERROR] - __main__ - (app.py).(146) - [ERROR] 'NoneType' object has no attribute 'lower'
-2021-01-05 11:17:41,352 - [INFO] - __main__ - (app.py).(149) - [Bot] Бот закончил работу!
