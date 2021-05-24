@@ -12,6 +12,6 @@ A bot is a program designed for users and administrators of telegram channels. Y
 
 ## How to use
 * Install the script
-* Edit TOKEN in file Echo-Bot.py
+* Edit token in file config.py
 * [Download Telegram](https://desktop.telegram.org/)
 * Launch the bot!
