@@ -1,4 +1,4 @@
-# Clear-Bot-Telegram
+# Clear-Bot-Telegram (Only in Russian)
 Python Telegram bot and your main assistant in the administration of chats and channels. Filters messages and removes all unwanted content.
 
 A bot is a program designed for users and administrators of telegram channels. You can use it to delete unwanted content in the chat. The bot can delete bad words, photos, geolocation, contacts, documents, links, and other garbage. Can put protection against spam.
